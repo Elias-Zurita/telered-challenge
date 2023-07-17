@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@200;300;400;500;600;700;800;900&family=Open+Sans+Condensed:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+.main {
+  width: 100%;
+}
+.fondobotones {
+  width: 100%;
+  background-color: #eaeaea;
+}
+/*#peliculabanner {
+  display: none;
+}
+#peliculabanner.peliculaelegida {
+  display: block;
+}*/
+.contendorancho {
+  width: 960px;
+  max-width: calc(100% - 40px);
+  margin: auto;
+  font-family: "Open Sans Condensed", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  position: relative;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  line-height: 90px;
+  margin: left;
+}
+h1 {
+  font-size: 40px;
+  color: #1374a1;
+  font-weight: normal;
+}
+header p {
+  font-weight: bold;
+  color: #1374a1;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+section {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  /*grid-template-columns: repeat(16, 1fr);*/
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-size: cover;
+  background-image: url(img/poster/GHJu7lSXXC.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 0;
+}
+
+section .info {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.canal {
+  width: 140px;
+  height: 140px;
+  margin: 15px auto;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.canal img {
+  margin: 0 auto 0;
+}
+
+.numero {
+  width: 100%;
+  height: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+}
+.nombre {
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  z-index: 1;
+  top: 75px;
+}
+
+.numeroabajo {
+  height: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  line-height: 20px;
+}
+.nombreabajo {
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  line-height: 20px;
+}
+
+.detalle {
+  height: 110px;
+  margin: 5px auto 0;
+  overflow: hidden;
+  padding: 0 5px 0 5px;
+}
+.detalle p {
+  font-size: 1.5 rem;
+  text-align: center;
+}
+
+.publicoMobile {
+  display: none;
+}
+
+.publico {
+  margin: auto;
+  text-align: center;
+}
+
+@media all and (max-width: 680px) {
+  .detalle {
+    height: 179px;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 10px 0 10px;
+  }
+
+  .detalle p {
+    font-size: 1.5 rem;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .publicoMobile {
+    display: block;
+  }
+
+  .publicoMobile h3 {
+    font-size: 25px;
+    color: #440578;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+  .publico {
+    display: none;
+  }
+}
+
+h2 {
+  color: #440578;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.clase {
+  height: 15px;
+  margin: 5px auto 0px;
+  text-align: center;
+}
+.claseMobile {
+  display: none;
+}
+
+.boton {
+  height: 45px;
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  margin: auto;
+  padding: 0 10px 0 10px;
+}
+
+.botones {
+  width: 100%;
+  display: flex;
+  padding: 30px 0 20px 0;
+}
+
+.botones a {
+  text-decoration: none;
+}
+
+.canales {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.divcanal {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  line-height: 100px;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+.contenedorcanal {
+  height: 120px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-image: url(img/channel/162.png);
+  background-repeat: no-repeat;
+}
+.contenedorcanalinfo {
+  height: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 15px auto 10px;
+  position: relative;
+}
+.contenedorcanalinfo img {
+  margin-left: 30px;
+  text-align: center;
+}
+.canalimg {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  background-position: center;
+  background-image: url(img/channel/162.png);
+  background-repeat: no-repeat;
+}
+
+.contenedorcanal img {
+  margin: auto;
+}
+
+.verahora {
+  display: none;
+}
+
+.verahoraDesk {
+  margin: auto;
+  position: absolute;
+  left: 70px;
+  top: 381px;
+}
+
+.fondogris {
+  width: 100%;
+  height: 280px;
+  position: absolute;
+  background-color: #eaeaea;
+  z-index: -1;
+  top: 550px;
+  left: 0;
+}
+
+@media all and (max-width: 680px) {
+  .main {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+  }
+  section .banner {
+    height: 450px;
+    background-color: lightblue;
+  }
+  section .info {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    top: 430px;
+    left: 0px;
+    box-sizing: border-box;
+  }
+
+  .botones {
+    margin: auto;
+  }
+  .canales {
+    margin: 30px auto;
+  }
+
+  .divcanal {
+    margin-top: 10px;
+  }
+  .banner {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(img/poster/6ZlKYy8n5W.jpg);
+  }
+  .boton {
+    height: 45px;
+    font-size: 20px;
+    position: relative;
+  }
+  .canal {
+    width: 100%;
+    height: 150px;
+    margin: 15px;
+  }
+
+  .verahora {
+    display: inline;
+    height: 200px;
+    margin-right: 10px;
+  }
+
+  .verahoraDesk {
+    display: none;
+  }
+
+  .contenedorcanal img {
+    margin: auto;
+  }
+
+  .contenedorcanalinfo {
+    width: 100%;
+  }
+
+  .numeroabajo {
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .nombreabajo {
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .fondogris {
+    display: none;
+  }
+  .clase {
+    display: none;
+  }
+  .claseMobile {
+    display: block;
+    width: 100%;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .namemobile {
+    width: 100px;
+    height: 40px;
+    background-color: red;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .main {
+    width: 100%;
+  }
+  section .info {
+    height: 450px;
+    flex-direction: column;
+  }
+  .canal {
+    height: 170px;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+  .contenedorcanalinfo {
+    width: 100%;
+  }
+  .verahora {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .claseMobile {
+    display: none;
+  }
+  .clase {
+    display: block;
+  }
+  .detalle {
+    height: 150px;
+  }
+  .botones {
+    margin-top: 200px;
+  }
+}
+
+.pruebaabsoluta {
+  border: 1px solid blue;
+  display: block;
+  width: 1000px;
+  max-width: calc(100% - 20px);
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+.adentro {
+  display: block;
+  background: red;
+  width: 300px;
+  height: 500px;
+  right: 0;
+  position: absolute;
+}

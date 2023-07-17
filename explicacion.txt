@@ -1,0 +1,15 @@
+Todo el código que ingrese fue en el archivo script.js.
+
+En las primeras líneas declaro como botón los input del html y a esa variable "botón" le aplico la función click.
+
+Creó la función setData y canales.
+
+Por medio de los querySelector aplico las imágenes al banner, al canal y las descripciones de detalle, nombre, número y público.
+
+Creo la funcion canales, y le aplico un forEach para que el json me traiga cada uno de los canales. Tomo la clase del html "canales" y le inserto la clase canal y dentro las clases contenedorcanalinfo, canalimg, nombre y numero.
+
+Por ultimo obtengo el id del canal al que se le hace click, creo la funcion evento y declaro id.
+
+Con un conficional if determino si existe el parametro id que requiero, sino tomo el id del padre. Asi obtengo el id de la pelicula.
+
+Declaro "m" aplico un filtro, eso me devuelve un array. Si me devuelve un 1, envio la info al setData.
